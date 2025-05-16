@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ## ⚙️ Configuration
 
-All configurable parameters are located in the ```MCQconfig.py``` file. Before running the script, update the following variables:
+All configurable parameters are located in the ```MCQConfig.py``` file. Before running the script, update the following variables:
 
 ```
 # MCQconfig.py
