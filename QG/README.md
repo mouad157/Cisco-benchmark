@@ -1,6 +1,6 @@
 # 🧠 MCQ Generator
 
-This project leverages OpenAI's API to generate multiple-choice questions (MCQs) from a given input file using configurable settings. It's designed for educators, content creators, and developers who want to automate question generation with AI.
+This project leverages OpenAI's API to generate multiple-choice questions (MCQs) from a given input file using configurable settings. It's designed to automate question generation with AI.
 
 ---
 
