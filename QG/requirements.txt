@@ -1,0 +1,4 @@
+nltk==3.9.1
+numpy==2.2.5
+openai==1.78.1
+pandas==2.2.3
