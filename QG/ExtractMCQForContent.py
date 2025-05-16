@@ -54,19 +54,19 @@ def run2(section_text, out_csvname,kplist,ktlist):
     
     # ktlist = extractKeyTopics(section_text)
     
-    # csvrows3=[]
-    # if ktlist is not None:
-    #     print ("Extracted keytopics:\n"+str('\n'.join(ktlist)))
-    #     csvrows3 = generateMCQsForKeyTopics(ktlist, section_text, config.nqs_ktopic)
-    #     csvrows4 = generateTypeMCQsForKeyTopics(ktlist, section_text, config.ntypedqs_ktopic)
+    csvrows3=[]
+    if ktlist is not None:
+        print ("Extracted keytopics:\n"+str('\n'.join(ktlist)))
+        csvrows3 = generateMCQsForKeyTopics(ktlist, section_text, config.nqs_ktopic)
+        csvrows4 = generateTypeMCQsForKeyTopics(ktlist, section_text, config.ntypedqs_ktopic)
     
-    # print ()
-    # print ("#questions="+str(len(csvrows3)))
-    # print ()
-    # print ("#Typed questions="+str(len(csvrows4)))
+    print ()
+    print ("#questions="+str(len(csvrows3)))
+    print ()
+    print ("#Typed questions="+str(len(csvrows4)))
     
-    # csvrows.extend(csvrows3)
-    # csvrows.extend(csvrows4)
+    csvrows.extend(csvrows3)
+    csvrows.extend(csvrows4)
     
     ###########
     
