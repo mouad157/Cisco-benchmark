@@ -1,6 +1,6 @@
 # 🧠 MCQ Generator
 
-This project leverages OpenAI's API to generate multiple-choice questions (MCQs) from a given input file using configurable settings. It's designed to automate question generation with AI.
+This project leverages OpenAI's API to generate multiple-choice questions (MCQs) from a given input file using configurable settings.
 
 ---
 
@@ -31,7 +31,7 @@ All configurable parameters are located in the ```MCQConfig.py``` file. Before r
 input_file_path = "path/to/your/input/file.txt"
 
 # Path where the generated MCQs will be saved
-output_file_path = "path/to/your/output/file.json"
+output_file_path = "path/to/your/output/file.csv"
 
 # Your OpenAI API key
 api_key = "your_openai_api_key"
