@@ -1,8 +1,7 @@
 # 📝 TextChunker
 
-**TextChunker** is a lightweight utility for breaking large `.txt` or `.pdf` documents into manageable chunks using configurable parameters. It supports metadata extraction and section identification powered by OpenAI models.
+**TextChunker** is a lightweight utility for breaking large `.txt` or `.pdf` documents into manageable and meaningful chunks using configurable parameters. It supports metadata extraction and section identification powered by OpenAI models.
 
----
 
 ## 🚀 Features
 
@@ -10,8 +9,8 @@
 - Use OpenAI models to assist with metadata extraction
 - Easy-to-edit config file for flexibility
 - Outputs structured chunks into a target folder
+- Outputs metadata files in ```.json``` format
 
----
 
 ## 🧱 Requirements
 
@@ -52,14 +51,14 @@ The script will:
 
 - Read the input file
 
-- Extract relevant metadata (if configured)
+- Extract relevant metadata
 
 - Chunk the content based on avgseclen
 
 - Save the resulting chunks in the specified outdir
 
 ## 📁 Output
-Output files will be saved in the folder specified in outdir. The exact format and structure depend on how your script processes and chunks the input file.
+Output files will be saved in the folder specified in outdir.
 
 ## 🧠 Model Support
 This tool uses OpenAI models (e.g., gpt-4o-mini) for:
