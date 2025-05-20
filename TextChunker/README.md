@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 
 ## ⚙️ Configuration
-Create a config file named config.txt in the root of your project directory with the following structure:
+Modify the config file named Config.py in the root of your project directory with the following structure:
 
 ```
 ## openai params
@@ -37,7 +37,7 @@ inptxtfile = "./path/to/input.txt"
 outdir = "./path/to/folder"
 
 ## section param
-# typical average section length (in tokens or characters depending on implementation)
+# typical average section length
 avgseclen = 2048
 ```
 🔐 Note: Keep your OpenAI API key secure and never commit it to version control.
@@ -53,7 +53,7 @@ The script will:
 
 - Extract relevant metadata
 
-- Chunk the content based on avgseclen
+- Chunk the content based on the structure of the file (sections and subsections) and avgseclen
 
 - Save the resulting chunks in the specified outdir
 
