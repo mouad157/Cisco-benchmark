@@ -9,7 +9,7 @@
 - Use OpenAI models to assist with metadata extraction
 - Easy-to-edit config file for flexibility
 - Outputs structured chunks into a target folder
-- Outputs metadata files in ```.json``` format
+- Outputs metadata file in ```.json``` format
 
 
 ## 🧱 Requirements
@@ -40,7 +40,7 @@ outdir = "./path/to/folder"
 # typical average section length
 avgseclen = 2048
 ```
-🔐 Note: Keep your OpenAI API key secure and never commit it to version control.
+🔐 Note: Keep your OpenAI API key secure
 
 ## 🏃 How to Run
 Once your configuration file is ready, run the main script:
