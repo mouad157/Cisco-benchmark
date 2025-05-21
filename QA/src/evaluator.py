@@ -260,6 +260,7 @@ def evaluate(input_file,model_type, model_name, api_key,system_prompt,output_fil
             return "Model not found."
     # Evaluate Model
     y_true = [item["answer"] for _,item in dataset_type.iterrows()]
+    y_type = [item["predicted_type"] for _,item in dataset_type.iterrows()]
     y_pred = [generate_answer(item["question"],model_type, model_name,api_key,prompt=system_prompt) for _,item in dataset_type.iterrows()]
     for index, elem in dataset_type.iterrows():
         dataset_type.at[index,"model_name"] = str(model_name)
@@ -270,11 +271,11 @@ def evaluate(input_file,model_type, model_name, api_key,system_prompt,output_fil
     with open(output_file, mode='w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         # Write the header
-        writer.writerow(['question', 'answer',"file_name"])
+        writer.writerow(['question', 'answer','question_type',"file_name"])
         # Write the rows
-        for question, answer in zip(y_true, y_pred):
+        for question,type, answer in zip(y_true,y_type, y_pred):
             
-            writer.writerow([question, answer, input_file])
+            writer.writerow([question, answer,type, input_file])
 
     data_dict = dataset_type.to_dict('records')
 
