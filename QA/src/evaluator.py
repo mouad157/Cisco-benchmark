@@ -24,7 +24,7 @@ from pymongo import MongoClient
 import torch
 import requests
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-from QTypeDefs import getPromptMCQ
+from src.QTypeDefs import getPromptMCQ
 from pymongo import MongoClient
 
 # Define supported model lists
@@ -209,6 +209,10 @@ def evaluate(input_file,model_type, model_name, api_key,system_prompt,output_fil
         Returns:
             str: The generated answer.
         """
+        OPENAI_MODELS =[]
+        MISTRAL_MODELS = []
+        DEEPSEEK_MODELS = []
+        ANTHROPIC_MODELS = []
         if model_type == "openai":
           OPENAI_MODELS = get_openai_models(api_key)
         elif model_type == "mistral":
