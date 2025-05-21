@@ -157,7 +157,7 @@ def breakSections(first_fewp, content, outfpath_pfx, logfout):
         # writeToFile(content, outfpath_pfx+".txt")            
 
 
-def new_chunker(inpfile,outdir):
+def run(inpfile,outdir):
     logfile=outdir+"/test2.log.txt"
     logfout = open (logfile, "w")
     if inpfile.endswith(".pdf"):
@@ -242,4 +242,4 @@ def new_chunker(inpfile,outdir):
     logfout.close()
                    
 if __name__=="__main__":
-    new_chunker(inptxtfile,outdir)
+    run(inptxtfile,outdir)
