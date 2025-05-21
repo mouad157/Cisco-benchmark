@@ -33,14 +33,16 @@ Make sure you have Python 3 installed, then run:
 #### 1️⃣ Running Model Evaluation
 To evaluate a model using a dataset, call the evaluate function:
 ```
-from src.main import evaluate
+from src.evaluator import evaluate
 
 input_file = "data/questions.csv"  # Path to your CSV file
 model_name = "gpt-4o"  # Change to your model
+model_type = "openai"  # Change to your model type, options are ["openai","mistral","deepseek","anthropic"]
 api_key = "your-api-key"  # Replace with your key
-system_prompt = "Answer concisely."
+system_prompt = "Answer concisely." # Replace with the prompt you want to give to the model
+output_file = "output.csv" # (optional) Replace with the name of the output_file make sure it's a csv file
 
-df, avg_score = evaluate(input_file, model_name, api_key, system_prompt)
+df, avg_score = evaluate(input_file,model_type, model_name, api_key, system_prompt, output_file)
 
 print(f"Model accuracy: {avg_score:.2f}%")
 ```
