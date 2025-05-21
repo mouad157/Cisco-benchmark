@@ -17,7 +17,7 @@ The [QA module](https://github.com/mouad157/Cisco-benchmark/tree/main/QA) tests 
 ➡️ See [QA/README.md](https://github.com/mouad157/Cisco-benchmark/blob/main/QA/README.md) for setup, supported providers, and data schema.
 
 ## 📁 QG (Question Generation)
-The [QG module](https://github.com/mouad157/Cisco-benchmark/tree/main/QG) is responsible for generating multiple-choice questions using Key Topics and Key Terms of a given content.
+The [QG module](https://github.com/mouad157/Cisco-benchmark/tree/main/QG) is responsible for generating multiple-choice questions using *Key Topics* and *Key Terms* of a given content.
 
 ➡️ See [QG/README.md](https://github.com/mouad157/Cisco-benchmark/blob/main/QG/README.md) for details on usage and configuration.
 
