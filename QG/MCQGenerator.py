@@ -18,9 +18,9 @@ SYS_PROMPT="You are a Cisco technical support engineer with in-depth"+ \
     " knowledge of CCNA certification materials."
         
 MCQPFX="Generate exactly one multiple-choice questions based on the content provided."+ \
-    " Return your response as a JSON-tuple={\"question\":<the question without the choices>,"+\
+    " Return only a JSON-tuple={\"question\":<the question without the choices>,"+\
   "  \"options\":<JSON list of multiple-choice options, A. B. ...>,"+\
-  "\"answers\":<JSON list the correct answers to the question>}"
+  "\"answers\":<JSON list of the correct answers to the question, only using the choice options e.g. A; e.g. C, D >}"
 
 MCQPROMPTS=[
     MCQPFX+" Use the keyphrase %s.\nContent:\n%s",
@@ -29,15 +29,18 @@ MCQPROMPTS=[
     ]
 
 KPF_MCQPROMPT="Generate exactly %s multiple-choice questions based on the content provided."+ \
-    " Return your response as a Python list of JSON-tuples. Each JSON tuple is {\"question\":<the question without the choices>,"+\
+    " Return only a Python list of JSON-tuples. Each JSON tuple is {\"question\":<the question without the choices>,"+\
   "  \"options\":<JSON list of multiple-choice options, A. B. ...>,"+\
-  "\"answers\":<JSON list the correct answers to the question>}. \nContent:\n%s"
+ "\"answers\":<JSON list of the correct answers to the question, only using the choice options e.g. A; e.g. C, D >}.\nContent:\n%s"
+
 
 KT_MCQPROMPT="Generate exactly %s multiple-choice questions"+\
     " based on the content provided for the topic: %s."+ \
-    " Return your response as a Python list of JSON-tuples. Each JSON tuple is {\"question\":<the question without the choices>,"+\
+    " Return only a Python list of JSON-tuples. Each JSON tuple is {\"question\":<the question without the choices>,"+\
   "  \"options\":<JSON list of multiple-choice options, A. B. ...>,"+\
-  "\"answers\":<JSON list the correct answers to the question>}. \nContent:\n%s"
+"\"answers\":<JSON list of the correct answers to the question, "+\
+    "only using the choice options e.g. A; e.g. C, D >}. \nContent:\n%s"
+
 
 
 
@@ -55,7 +58,7 @@ KT_TYPEDMCQPROMPT="Generate exactly %s multiple-choice questions of "+\
     " of question type %s based on the content provided for the topic: %s."+ \
     " Return your response as a Python list of JSON-tuples. Each JSON tuple is {\"question\":<the question without the choices>,"+\
   "  \"options\":<JSON list of multiple-choice options, A. B. ...>,"+\
-  "\"answers\":<JSON list the correct answers to the question>}. \nContent:\n%s"
+  "\"answers\":<JSON list of the correct answers to the question, only using the choice options e.g. A; e.g. C, D >} \nContent:\n%s"
 
   
 ################
