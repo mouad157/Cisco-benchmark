@@ -20,7 +20,7 @@ All runs used consistent settings:
 | gpt-4o       | fast    | 123.85      |
 | gpt-4o       | slow    | 269.71      |
 | o1           | fast    | 163.85      |
-| o1           | slow    | 966.90      |
+| o1           | slow    | 811.91      |
 
 ## Key Observations
 
