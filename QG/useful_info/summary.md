@@ -26,5 +26,4 @@ All runs used consistent settings:
 
 - **`gpt-4o-mini` (fast)** had the shortest runtime (91.83s), making it the most efficient configuration.
 - **`o1 (slow)`** was the slowest, taking over **10x longer than `gpt-4o-mini (fast)`**.
-- For all models, the `slow` setting significantly increased runtime.
-- The performance degradation from `fast` to `slow` was most severe for `o1`, indicating less scalability in slower configurations.
+
