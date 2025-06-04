@@ -29,6 +29,37 @@ The main metric recorded is the number of failures:
 - For prompt 1: the number of times the model failed to parse the question.
 - For prompt 2: the number of times the output contained an explaination of the answer and not exclusively what was asked from the LLM.
 
+for example, this would be a failed output of prompt 2:
+```
+Looking at this problem, I need to analyze subnetting for network 172.30.0.0 with a /22 mask.
+
+First, let me understand what a /22 mask means:
+- /22 = 255.255.252.0
+- This uses 22 bits for the network portion
+- Since 172.30.0.0 is a Class B network (/16), we're using 6 additional bits for subnetting (22-16=6)
+- This gives us 2^6 = 64 subnets
+
+For the subnet increments:
+- With a /22 mask, each subnet contains 2^(32-22) = 2^10 = 1024 addresses
+- 1024 addresses = 4 blocks of 256
+- This means subnets increment by 4 in the third octet
+
+The subnet IDs would be:
+- 172.30.0.0
+- 172.30.4.0
+- 172.30.8.0
+- ...continuing...
+- 172.30.252.0
+
+Let me verify each option:
+- A: "differ by 22 in third octet" - FALSE (they differ by 4)
+- B: "differ by 16 in fourth octet" - FALSE (fourth octet stays 0)
+- C: "contains 64 subnet IDs" - TRUE (2^6 = 64)
+- D: "last subnet is 172.30.252.0" - TRUE (0 + 4×63 = 252)
+
+CD
+```
+
 ---
 
 ## Results Summary
