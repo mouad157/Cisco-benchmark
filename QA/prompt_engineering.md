@@ -9,14 +9,16 @@ This document summarizes the results of a comparative experiment between two pro
 
 The prompts are the following:
 
-Prompt 1 ```
+ - Prompt 1:
+```
 SYSPROMPT="You are Cisco CCNA specialist with in-depth knowledge"+\
     " of networking fundamentals, devices, and Cisco products. "
 USRPROMPT="Answer the following multiple-choice question: %s. Return only a JSON tuple in the following format"+\
         "{\"answers\"=<JSON list of correct options, example [A, B]>,+\
         \"explanation\"=<justification for the selected answers>}" % question
 ```
-Prompt 2 ```
+ - Prompt 2:
+```
 sysprompt = 
 "## answer the following question with the correct letter alone or the correct letters without any separator or explanation" \
      "### for example if the answer is A. TCP, B. IP address. Your answer would be: AB"
