@@ -5,7 +5,7 @@ Example MCQ files from CCNA are included.
 
 ## Overview
 
-This document summarizes the results of a comparative experiment between two prompts across three language model families: **Anthropic**, **Mistral**, and **OpenAI**. The evaluation was conducted on two datasets related to networking concepts:
+This document summarizes the results of a comparative experiment between three prompts across three language model families: **Anthropic**, **Mistral**, and **OpenAI**. The evaluation was conducted on two datasets related to networking concepts:
 
 - **IPv Addressing** (25 questions)  
 - **IPv Routing** (31 questions)
@@ -27,10 +27,17 @@ sysprompt =
      "### for example if the answer is A. TCP, B. IP address. Your answer would be: AB"
 usrprompt = question
 ```
+ - Prompt 3:
+```
+sysprompt = 
+"You are a Cisco systems expert.\n## answer the following multiple-choice question with ONLY the correct letter(s) of the answer options without any separator or explanation.\n" \
+         "### For example, if the correct answers are A and B from the options list A. TCP, B. IP address, C. UDP, D. None of the above. Your answer would be: AB"
+usrprompt = question
+```
 
 The main metric recorded is the number of failures:
 - For prompt 1: the number of times the model failed to parse the question.
-- For prompt 2: the number of times the output contained an explaination of the answer and not exclusively what was asked from the LLM.
+- For prompt 2 and 3: the number of times the output contained an explaination of the answer and not exclusively what was asked from the LLM.
 
 for example, this would be a failed output of prompt 2:
 ```
