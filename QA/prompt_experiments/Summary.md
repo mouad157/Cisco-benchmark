@@ -93,13 +93,13 @@ in the expected format=> lower the better)
 
 ## Observations
 
-- **Mistral** showed a significant improvement with prompt 2 (0 failures), compared to 6 total failures with prompt 1.
-- **Anthropic** performed similarly overall, with a notable reduction in failures on the IPv Addressing dataset using prompt 1.
+- **Mistral** showed a significant improvement with prompt 2 (0 failures), compared to 6 total failures with prompt 2 and 3.
+- **Anthropic** performed similarly overall, with a notable reduction in failures on the IPv Addressing dataset using prompt 3.
 - **OpenAI** models were robust in both cases, with no failures observed across either prompt or dataset.
-- prompt 1 achieved **equal or better performance across all models**, with improvements particularly visible in Mistral and Anthropic models.
+- prompt 3 achieved **equal or better performance across all models**, with improvements particularly visible in Mistral and Anthropic models.
 
 ---
 
 ## Conclusion
 
-The results indicate that prompt 1 generally leads to more consistent and cleaner outputs, particularly with Mistral and Anthropic models. Further testing and analysis could help explore the causes of the remaining Anthropic inconsistencies and generalize these improvements across broader task sets.
+The results indicate that prompt 3 generally leads to more consistent and cleaner outputs, particularly with Mistral and Anthropic models. Further testing and analysis could help explore the causes of the remaining Anthropic inconsistencies and generalize these improvements across broader task sets.
