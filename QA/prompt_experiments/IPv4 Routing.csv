@@ -1,0 +1,129 @@
+question,answer
+"Which operating systems run on Cisco enterprise routers and use a CLI that works much like the CLI on Cisco LAN switches? (Choose two answers.)
+A. CatOS
+B. IOS
+C. Windows
+D. IOS XE",BD
+"Which action would you expect to be true of a router CLI interaction that is not true when configuring a LAN switch that performs only Layer 2 switching functions?
+A. Moving from global to physical interface configuration mode
+B. Configuring an IP address in physical interface configuration mode
+C. Configuring a 10/100/1000 port’s settings related to speed and autonegotiation
+D. Configuring a console password",B
+"Which answers list a task that could be helpful in making a router interface G0/0 ready to route packets? (Choose two answers.)
+A. Configuring the ip address address mask command in G0/0 configuration mode
+B. Configuring the ip address address and ip mask mask commands in G0/0 configuration mode
+C. Configuring the no shutdown command in G0/0 configuration mode
+D. Setting the interface description in G0/0 configuration mode",AC
+"The output of the show ip interface brief command on R1 lists interface status codes of “down” and “down” for interface GigabitEthernet 0/0. The interface connects to a LAN switch with a UTP straight-through cable. Which of the following could be true?
+A. The shutdown command is currently configured for router interface G0/0.
+B. The shutdown command is currently configured for the switch interface on the other end of the cable.
+C. The router was never configured with an ip address command on the interface.
+D. The router was configured with the no ip address command.",B
+"Which of the following commands list the IP address but not the subnet mask of an interface?
+A. show running-config
+B. show protocols type number
+C. show ip interface brief
+D. show interfaces",C
+"Which of the following is different on the Cisco switch CLI for a Layer 2 switch as compared with the Cisco router CLI?
+A. The commands used to configure simple password checking for the console
+B. The number of IP addresses configured
+C. The configuration of the device’s hostname
+D. The configuration of an interface description ",B
+"Router R1 lists a route in its routing table. Which of the following answers list a fact from a route that the router uses when matching the packet’s destination address? (Choose two answers.)
+A. Mask
+B. Next-hop router
+C. Subnet ID
+D. Outgoing interface",AC
+"PC1 sends an IP packet to PC2. To do so, PC1 sends the packet to Router R1, which routes it to Router R2, which routes it to Router R3, which routes it to the final destination (PC2). All links use Ethernet. How many routers de-encapsulate the IP packet from an Ethernet frame during its journey from PC1 to PC2?
+A. 0
+B. 1
+C. 2
+D. 3",D
+"After configuring a working router interface with IP address/mask 10.1.1.100/26, which of the following routes would you expect to see in the output of the show ip route command? (Choose two answers.)
+A. A connected route for subnet 10.1.1.64 255.255.255.192
+B. A connected route for subnet 10.1.1.0 255.255.255.0
+C. A local route for host 10.1.1.100 255.255.255.192
+D. A local route for host 10.1.1.100 255.255.255.255
+E. A local route for host 10.1.1.64 255.255.255.255",AD
+"Which of the following pieces of information could be listed in a correct ip route command on a local router? (Choose two answers.)
+A. The local router’s IP address on the link between the two routers
+B. The next-hop router’s IP address on the link between the two routers
+C. The next-hop router’s interface ID on the link between the two routers
+D. The local router’s interface ID on the link between the two routers",BC
+"Which of the following commands correctly configures a static route?
+A. ip route 10.1.3.0 255.255.255.0 10.1.130.253
+B. ip route 10.1.3.0 serial 0
+C. ip route 10.1.3.0 /24 10.1.130.253
+D. ip route 10.1.3.0 /24 serial 0",A
+"A network engineer configures the ip route 10.1.1.0 255.255.255.0 s0/0/0 command on a router and then issues a show ip route command from enable mode. No routes for subnet 10.1.1.0/24 appear in the output. Which of the following could be true?
+A. The ip route command has incorrect syntax and was rejected in config mode.
+B. Interface s0/0/0 is down.
+C. The router has no up/up interfaces in Class A network 10.0.0.0.
+D. The ip route command is missing a next-hop router IP address. ",B
+"Router 1 has a Fast Ethernet interface 0/0 with IP address 10.1.1.1. The interface is connected to a switch. This connection is then migrated to use 802.1Q trunking. Which of the following commands could be part of a valid configuration for Router 1’s Fa0/0 interface, assuming the trunk uses VLAN 4 as one of the supported VLANs? (Choose two answers.)
+A. interface fastethernet 0/0.4
+B. dot1q enable
+C. dot1q enable 4
+D. trunking enable
+E. trunking enable 4
+F. encapsulation dot1q 4",AF
+"Router R1 has a router-on-a-stick (ROAS) configuration with two subinterfaces of interface G0/1: G0/1.1 and G0/1.2. Physical interface G0/1 is currently in a down/down state. The network engineer then configures a shutdown command when in interface configuration mode for G0/1.1 and a no shutdown command when in interface configuration mode for G0/1.2. Which answers are correct about the interface state for the subinterfaces? (Choose two answers.)
+A. G0/1.1 will be in a down/down state.
+B. G0/1.2 will be in a down/down state.
+C. G0/1.1 will be in an administratively down state.
+D. G0/1.2 will be in an up/up state.",BC
+"A Layer 3 switch has been configured to route IP packets between VLANs 1, 2, and 3 using SVIs, which connect to subnets 172.20.1.0/25, 172.20.2.0/25, and 172.20.3.0/25, respectively. The engineer issues a show ip route connected command on the Layer 3 switch, listing the connected routes. Which of the following answers lists a piece of information that should be in at least one of the routes?
+A. Interface Gigabit Ethernet 0/0.3
+B. Next-hop router 172.20.2.1
+C. Interface VLAN 2
+D. Mask 255.255.255.0",C
+"An engineer has successfully configured a Layer 3 switch with SVIs for VLANs 2 and 3 with autostate enabled by default. Hosts in the subnets using VLANs 2 and 3 can ping each other with the Layer 3 switch routing the packets. The next week, the network engineer receives a call that those same users can no longer ping each other. If the problem is with the Layer 3 switching function, which of the following could have caused the problem? (Choose two answers.)
+A. Six (or more) out of ten working VLAN 2 access ports failing due to physical problems
+B. A shutdown command issued from interface VLAN 4 configuration mode
+C. A no vlan 2 command issued from global configuration mode
+D. A shutdown command issued from VLAN 2 configuration mode",CD
+"A LAN design uses a Layer 3 EtherChannel between two switches SW1 and SW2, with port-channel interface 1 used on both switches. SW1 uses ports G0/1, G0/2, G0/3, and G0/4 in the channel. Which of the following is true about SW1’s configuration to enable the channel to route IPv4 packets correctly? (Choose two answers.)
+A. The ip address command must be on the port-channel 1 interface.
+B. The ip address command must be on interface G0/1 (lowest numbered port).
+C. The port-channel 1 interface must be configured with the no switchport command.
+D. Interface G0/1 must be configured with the routedport command.",AC
+"A LAN design uses a Layer 3 EtherChannel between two switches: SW1 and SW2. An engineer adds SW1 port G0/1 to the channel successfully but later fails when adding SW1 port G0/2 to the channel. Which answers list a configuration setting on port G0/2 that would cause this issue? (Choose two answers.)
+A. A different STP cost (spanning-tree cost value)
+B. A different speed (speed value)
+C. A default setting for switchport (switchport)
+D. A different access VLAN (switchport access vlan vlan-id)",BC
+"A router has some routed and some switched physical ports. Which interface subcommands would you expect to be supported only on the switched ports?
+A. The switchport access vlan vlan-id subcommand
+B. The ip address address mask subcommand
+C. The description text subcommand
+D. The hostname name subcommand ",A
+"A PC connects to a LAN and uses DHCP to lease an IP address for the first time. Of the usual four DHCP messages that flow between the PC and the DHCP server, which ones does  the client send? (Choose two answers.)
+A. Acknowledgment
+B. Discover
+C. Offer
+D. Request",BD
+"Which of the following kinds of information are part of a DHCP server configuration? (Choose two answers.)
+A. Ranges of IP addresses in subnets that the server should lease
+B. Ranges of IP addresses to not lease per subnet
+C. DNS server hostnames
+D. The default router IP and MAC address in each subnet",AB
+"Which answers list a criterion for choosing which router interfaces need to be configured as a DHCP relay agent? (Choose two answers.)
+A. If the subnet off the interface does not include a DHCP server
+B. If the subnet off the interface does include a DHCP server
+C. If the subnet off the interface contains DHCP clients
+D. If the router interface already has an ip address dhcp command",AC
+"A router connects to an Internet service provider (ISP) using its G0/0/0 interface, with the ip address dhcp command configured. What does the router do with the DHCP-learned default gateway information?
+A. The router ignores the default gateway value learned from the DHCP server.
+B. The router uses the default gateway just like a host, ignoring its routing table.
+C. The router forwards received packets based on its routing table but uses its default gateway setting to forward packets it generates itself.
+D. The router adds a default route based on the default gateway to its IP routing table.",D
+"In the following excerpt from a command on a Mac, which of the following parts of the output represent information learned from a DHCP server? (Choose two answers.) 
+A. 00:6d:e7:b1:9a:11
+B. 172.16.4.2
+C. 0xffffff00
+D. 172.16.4.255",BC
+"Which of the following commands on a Windows OS should list both the host’s IP address and DNS servers’ IP addresses as learned with DHCP?
+A. ifconfig
+B. ipconfig
+C. ifconfig /all
+D. ipconfig /all ",D
