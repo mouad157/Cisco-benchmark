@@ -11,7 +11,7 @@ and summarize our findings below.
 ## Objective
 
 This experiment compares the runtime performance of three different models—`gpt-4o-mini`, `gpt-4o`, and `o1`—under `fast` and `slow` settings while processing the same chapter: **"1_Introduction to TCP-IP Networking.txt"**.
-fast refers to a unified prompt for generating the questions, while slow refers to using a prompts iteratively to generate the questions. We use three main calls in both the fast and the slow version, the first is to generate the MCQ questions from KP, the second to generate the MCQ questions from KT and the last generate MCQ questions from topics while specifying the question type.
+"fast" refers to a unified prompt for generating the questions (all keyphrases/keytopics together), while "slow" refers to using a prompts iteratively to generate the questions. We use three main calls in both the fast and the slow version, the first is to generate the MCQ questions from KP, the second to generate the MCQ questions from KT and the last generate MCQ questions from topics while specifying the question type.
 All runs used consistent settings:
 - `nkps_section=5`
 - `nqs_ktopic=3`
