@@ -1,4 +1,12 @@
-# Experiment Summary: Runtime Comparison Across Models and Settings
+In the default setting for generating MCQs, we adopt an iterative process.
+That is, for a given content, and each keyphrase/keytopic extracted for the content, a list of prompts are executed with each 
+keyphrase/keytopic. This results in long runtimes during QG
+
+Will asking the LLM to generate all of the questions together still yield equivalent results
+in terms of quality of questions, and is this faster? We study this aspect with various GPT LLMs 
+and summarize our findings below.
+
+# Runtime Comparison Across Models and Settings
 
 ## Objective
 
