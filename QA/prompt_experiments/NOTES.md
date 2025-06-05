@@ -67,6 +67,9 @@ CD
 
 ## Results Summary
 
+The table below shows the number of "fails" with each prompt (where a fail is registered when the LLM response is not 
+in the expected format=> lower the better)
+
 | Model     | Prompt        | IPv Addressing (25) | IPv Routing (31) |
 |-----------|---------------|----------------------|-------------------|
 | Anthropic | Prompt 1      | 5                    | 11                |
