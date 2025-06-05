@@ -1,4 +1,7 @@
-# Prompt Performance Comparison
+These notes contain details of our experiments with various prompts used in QA.
+Example MCQ files from CCNA are included.
+
+# QA Performance Comparison
 
 ## Overview
 
