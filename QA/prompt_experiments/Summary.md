@@ -81,10 +81,13 @@ in the expected format=> lower the better)
 |-----------|---------------|----------------------|-------------------|
 | Anthropic | Prompt 1      | 5                    | 11                |
 |           | Prompt 2      | 0                    | 10                |
+|           | Prompt 3      | 0                    | 4                 |
 | Mistral   | Prompt 1      | 5                    | 1                 |
 |           | Prompt 2      | 0                    | 0                 |
+|           | Prompt 3      | 0                    | 0                 |
 | OpenAI    | Prompt 1      | 0                    | 0                 |
 |           | Prompt 2      | 0                    | 0                 |
+|           | Prompt 3      | 0                    | 0                 |
 
 ---
 
