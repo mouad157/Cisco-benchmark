@@ -1,0 +1,456 @@
+EID,Question,PredictedQType
+1,"Which Cisco cloud security software centrally manages policies on multiple platforms such as Cisco ASA, Cisco Firepower, Cisco Meraki, and AWS?
+A. Cisco Defense Orchestrator
+B. Cisco Configuration Professional
+C. Cisco Secureworks
+D. Cisco DNAC",Feature specification
+2,"Which technology must be used to implement secure VPN connectivity among company branches over a private IP cloud with any-to-any scalable connectivity?
+A. DMVPN
+B. FlexVPN
+C. IPsec DVTI
+D. GET VPN",Feature specification
+3,"Which two services must remain as on-premises equipment when a hybrid email solution is deployed? (Choose two)
+A. DDoS
+B. antispam
+C. antivirus
+D. encryption
+E. DLP",Feature specification
+4,"An engineer is configuring a Cisco ESA and wants to control whether to accept or reject email messages to a recipient address. Which list contains the allowed recipient addresses?
+A. SAT
+B. BAT
+C. HAT
+D. RAT",Feature specification
+5,"Which portion of the network do EPP solutions solely focus on and EDR solutions do not?
+A. server farm
+B. perimeter
+C. core
+D. East-West gateways",Feature specification
+6,"An organization wants to secure data in a cloud environment. Its security model requires that all users be authenticated and authorized. Security configuration and posture must be continuously validated before access is granted or maintained to applications and dat a. There is also a need to allow certain application traffic and deny all other traffic by default. Which technology must be used to implement these requirements?
+A. Virtual routing and forwarding
+B. Microsegmentation
+C. Access control policy
+D. Virtual LAN",Feature specification
+7,"What must be configured on Cisco Secure Endpoint to create a custom detection tile list to detect and quarantine future files?
+A. Use the simple custom detection feature and add each detection to the list.
+B. Add a network IP block allowed list to the configuration and add the blocked files.
+C. Create an advanced custom detection and upload the hash of each file
+D. Configure an application control allowed applications list to block the files",Feature specification
+8,"An engineer is adding a Cisco DUO solution to the current TACACS+ deployment using Cisco ISE. The engineer wants to authenticate users using their account when they log into network devices. Which action accomplishes this task?
+A. Configure Cisco DUO with the external Active Directory connector and tie it to the policy set within
+Cisco ISE.
+B. Install and configure the Cisco DUO Authentication Proxy and configure the identity source
+sequence within Cisco ISE
+C. Create an identity policy within Cisco ISE to send all authentication requests to Cisco DUO.
+D. Modify the current policy with the condition MFASourceSequence DUO=true in the authorization
+conditions within Cisco ISE",Feature specification
+9,"Which Cisco platform onboards the endpoint and can issue a CA signed certificate while also automatically configuring endpoint network settings to use the signed endpoint certificate, allowing the endpoint to gain network access?
+A. Cisco ISE
+B. Cisco NAC
+C. Cisco TACACS+
+D. Cisco WSA",Feature specification
+10,"An engineer enabled SSL decryption for Cisco Umbrella intelligent proxy and needs to ensure that traffic is inspected without alerting end-users. Which action accomplishes this goal?
+A. Restrict access to only websites with trusted third-party signed certificates.
+B. Modify the users browser settings to suppress errors from Cisco Umbrella.
+C. Upload the organization root CA to Cisco Umbrella.
+D. Install the Cisco Umbrella root CA onto the users device.",Feature specification
+11,"What are the two types of managed Intercloud Fabric deployment models? (Choose two.)
+A. Public managed
+B. Service Provider managed
+C. Enterprise managed
+D. User managed
+E. Hybrid managed",Disjunctive
+12,"Which two probes are configured to gather attributes of connected endpoints using Cisco Identity Services Engine? (Choose two)
+A. RADIUS
+B. TACACS+
+C. DHCP
+D. sFlow
+E. SMTP",Disjunctive
+13,"What are two DDoS attack categories? (Choose two)
+A. sequential
+B. protocol
+C. database
+D. volume-based
+E. screen-based",Disjunctive
+14,"Which two kinds of attacks are prevented by multifactor authentication? (Choose two)
+A. phishing
+B. brute force
+C. man-in-the-middle
+D. DDOS
+E. teardrop",Disjunctive
+15,"Which two request of REST API are valid on the Cisco ASA Platform? (Choose two)
+A. put
+B. options
+C. get
+D. push
+E. connect",Disjunctive
+16,"Which two tasks allow NetFlow on a Cisco ASA 5500 Series firewall? (Choose two)
+A. Enable NetFlow Version 9.
+B. Create an ACL to allow UDP traffic on port 9996.
+C. Apply NetFlow Exporter to the outside interface in the inbound direction.
+D. Create a class map to match interesting traffic.
+E. Define a NetFlow collector by using the flow-export command",Disjunctive
+17,"In which two ways does a system administrator send web traffic transparently to the Web Security Appliance? (Choose two)
+A. configure Active Directory Group Policies to push proxy settings
+B. configure policy-based routing on the network infrastructure
+C. reference a Proxy Auto Config file
+D. configure the proxy IP address in the web-browser settings
+E. use Web Cache Communication Protocol",Disjunctive
+18,"Which two behavioral patterns characterize a ping of death attack? (Choose two)
+A. The attack is fragmented into groups of 16 octets before transmission.
+B. The attack is fragmented into groups of 8 octets before transmission.
+C. Short synchronized bursts of traffic are used to disrupt TCP connections.
+D. Malformed packets are used to crash systems.
+E. Publicly accessible DNS servers are typically used to execute the attack.",Disjunctive
+19,"Which two activities can be done using Cisco DNA Center? (Choose two)
+A. DHCP
+B. Design
+C. Accounting
+D. DNS
+E. Provision",Disjunctive
+20,"What are two rootkit types? (Choose two)
+A. registry
+B. virtual
+C. bootloader
+D. user mode
+E. buffer mode",Disjunctive
+21,"What is a key difference between Cisco Firepower and Cisco ASA?
+A. Cisco ASA provides access control while Cisco Firepower does not.
+B. Cisco Firepower provides identity-based access control while Cisco ASA does not.
+C. Cisco Firepower natively provides intrusion prevention capabilities while Cisco ASA does not.
+D. Cisco ASA provides SSL inspection while Cisco Firepower does not.",Comparison
+22,"A network engineer is deciding whether to use stateful or stateless failover when configuring two ASAs for high availability. What is the connection status in both cases?
+A. need to be reestablished with stateful failover and preserved with stateless failover
+B. preserved with stateful failover and need to be reestablished with stateless failover
+C. preserved with both stateful and stateless failover
+D. need to be reestablished with both stateful and stateless failover",Comparison
+23,"When choosing an algorithm to us, what should be considered about Diffie Hellman and RSA for key establishment?
+A. RSA is an asymmetric key establishment algorithm intended to output symmetric keys
+B. RSA is a symmetric key establishment algorithm intended to output asymmetric keys
+C. DH is a symmetric key establishment algorithm intended to output asymmetric keys
+D. DH is an asymmetric key establishment algorithm intended to output symmetric keys",Comparison
+24,"What is a difference between GRE over IPsec and IPsec with crypto map?
+A. Multicast traffic is supported by IPsec with crypto map.
+B. GRE over IPsec supports non-IP protocols.
+C.GRE provides its own encryption mechanism.
+D. IPsec with crypto map oilers better scalability.",Comparison
+25,"What is a functional difference between Cisco AMP for Endpoints and Cisco Umbrella Roaming Client?
+A. The Umbrella Roaming client stops and tracks malicious activity on hosts, and AMP for Endpoints
+tracks only URL-based threats.
+B. The Umbrella Roaming Client authenticates users and provides segmentation, and AMP for
+Endpoints allows only for VPN connectivity
+C. AMP for Endpoints authenticates users and provides segmentation, and the Umbrella Roaming
+Client allows only for VPN connectivity.
+D. AMP for Endpoints stops and tracks malicious activity on hosts, and the Umbrella Roaming Client
+tracks only URL-based threats.",Comparison
+26,"What are two reasons for implementing a multifactor authentication solution such as Duo Security provide to an organization? (Choose two)
+A. flexibility of different methods of 2FA such as phone callbacks, SMS passcodes, and push
+notifications
+B. single sign-on access to on-premises and cloud applications
+C. integration with 802.1x security using native Microsoft Windows supplicant
+D. secure access to on-premises and cloud applications
+E. identification and correction of application vulnerabilities before allowing access to resources",Comparison
+27,"What is a difference between GETVPN and IPsec?
+A. GETVPN reduces latency and provides encryption over MPLS without the use of a central hub
+B. GETVPN provides key management and security association management
+C. GETVPN is based on IKEv2 and does not support IKEv1
+D. GETVPN is used to build a VPN network with multiple sites without having to statically configure
+all devices",Comparison
+28,"An engineer is trying to decide between using L2TP or GRE over IPsec for their site-to-site VPN implementation. What must be un solution?
+A. L2TP is an IP packet encapsulation protocol, and GRE over IPsec is a tunneling protocol.
+B. L2TP uses TCP port 47 and GRE over IPsec uses UDP port 1701.
+C. GRE over IPsec adds its own header, and L2TP does not.
+D. GRE over IPsec cannot be used as a standalone protocol, and L2TP can.",Comparison
+29,"What is the difference between Cross-site Scripting and SQL Injection, attacks?
+A. Cross-site Scripting is an attack where code is injected into a database, whereas SQL Injection is an
+attack where code is injected into a browser.
+B. Cross-site Scripting is a brute force attack targeting remote sites, whereas SQL Injection is a social
+engineering attack.
+C. Cross-site Scripting is when executives in a corporation are attacked, whereas SQL Injection is
+when a
+database is manipulated.
+D. Cross-site Scripting is an attack where code is executed from the server side, whereas SQL
+Injection is an attack where code is executed from the client side.",Comparison
+30,"What is the difference between deceptive phishing and spear phishing?
+A. Deceptive phishing is an attacked aimed at a specific user in the organization who holds a C-level
+role.
+B. A spear phishing campaign is aimed at a specific person versus a group of people.
+C. Spear phishing is when the attack is aimed at the C-level executives of an organization.
+D. Deceptive phishing hijacks and manipulates the DNS server of the victim and redirects the user to
+a false webpage.",Comparison
+31,"Which method of attack is used by a hacker to send malicious code through a web application to an unsuspecting user to request that the victim's web browser executes the code?
+A. buffer overflow
+B. browser WGET
+C. SQL injection
+D. cross-site scripting",Definition
+32,"What is the purpose of the Decrypt for Application Detection feature within the WSA Decryption options?
+A. It decrypts HTTPS application traffic for unauthenticated users.
+B. It alerts users when the WSA decrypts their traffic.
+C. It decrypts HTTPS application traffic for authenticated users.
+D. It provides enhanced HTTPS application detection for AsyncOS.",Definition
+33,"What is a function of the Layer 4 Traffic Monitor on a Cisco WSA?
+A. blocks traffic from URL categories that are known to contain malicious content
+B. decrypts SSL traffic to monitor for malicious content
+C. monitors suspicious traffic across all the TCP/UDP ports
+D. prevents data exfiltration by searching all the network traffic for specified sensitive information",Definition
+34,"Which cryptographic process provides origin confidentiality, integrity, and origin authentication for packets?
+A. IKEv1
+B. AH
+C. ESP
+D. IKEv2",Definition
+35,"In which type of attack does the attacker insert their machine between two hosts that are communicating with each other?
+A. LDAP injection
+B. man-in-the-middle
+C. cross-site scripting
+D. insecure API",Definition
+36,"What is the concept of Cl/CD pipelining?
+A. The project is split into several phases where one phase cannot start before the previous phase
+finishes successfully.
+B. The project code is centrally maintained and each code change should trigger an automated build
+and test sequence
+C. The project is split into time-limited cycles and focuses on pair programming for continuous code
+review
+D. Each project phase is independent from other phases to maintain adaptiveness and continual
+improvement",Definition
+37,"What is the function of SDN southbound API protocols?
+A. to allow for the dynamic configuration of control plane applications
+B. to enable the controller to make changes
+C. to enable the controller to use REST
+D. to allow for the static configuration of control plane applications",Definition
+38,"Which kind of API that is used with Cisco DNA Center provisions SSIDs, QoS policies, and update software versions on switches?
+A. Integration
+B. Intent
+C. Event
+D. Multivendor",Definition
+39,"Based on the NIST 800-145 guide, which cloud architecture is provisioned for exclusive use by a specific group of consumers from different organizations and may be owned, managed, and operated by one or more of those organizations?
+A. hybrid cloud
+B. private cloud
+C. community cloud
+D. public cloud",Definition
+40,"What is the purpose of the Cisco Endpoint IoC feature?
+A. It is an incident response tool.
+B. It provides stealth threat prevention.
+C. It is a signature-based engine.
+D. It provides precompromise detection.",Definition
+41,"When a transparent authentication fails on the Web Security Appliance, which type of access does the end user get?
+A. guest
+B. limited Internet
+C. blocked
+D. full Internet",Causal consequence
+42,"Why should organizations migrate to a multifactor authentication strategy?
+A. Multifactor authentication methods of authentication are never compromised
+B. Biometrics authentication leads to the need for multifactor authentication due to its ability to be
+hacked easily
+C. Multifactor authentication does not require any piece of evidence for an authentication
+mechanism
+D. Single methods of authentication can be compromised more easily than multifactor
+authentication",Causal consequence
+43,"A Cisco AMP for Endpoints administrator configures a custom detection policy to add specific MD5 signatures The configuration is created in the simple detection policy section, but it does not work What is the reason for this failure?
+A. The administrator must upload the file instead of the hash for Cisco AMP to use.
+B. The MD5 hash uploaded to the simple detection policy is in the incorrect format
+C. The APK must be uploaded for the application that the detection is intended
+D. Detections for MD5 signatures must be configured in the advanced custom detection policies",Causal consequence
+44,"An organization has two machines hosting web applications. Machine 1 is vulnerable to SQL injection while machine 2 is vulnerable to buffer overflows. What action would allow the attacker to gain access to machine 1 but not machine 2?
+A. sniffing the packets between the two hosts
+B. sending continuous pings
+C. overflowing the buffers memory
+D. inserting malicious commands into the database",Causal consequence
+45,"What is a benefit of using telemetry over SNMP to configure new routers for monitoring purposes?
+A. Telemetry uses a pull mehod, which makes it more reliable than SNMP
+B. Telemetry uses push and pull, which makes it more scalable than SNMP
+C. Telemetry uses push and pull which makes it more secure than SNMP
+D. Telemetry uses a push method which makes it faster than SNMP",Causal consequence
+46,"When planning a VPN deployment, for which reason does an engineer opt for an active/active FlexVPN configuration as opposed to DMVPN?
+A. Multiple routers or VRFs are required.
+B. Traffic is distributed statically by default.
+C. Floating static routes are required.
+D. HSRP is used for faliover.",Causal consequence
+47,"What is the benefit of integrating Cisco ISE with a MDM solution?
+A. It provides compliance checks for access to the network
+B. It provides the ability to update other applications on the mobile device
+C. It provides the ability to add applications to the mobile device through Cisco ISE
+D. It provides network device administration access",Causal consequence
+48,"When a Cisco WSA checks a web request, what occurs if it is unable to match a user-defined policy?
+A. It blocks the request.
+B. It applies the global policy.
+C. It applies the next identification profile policy.
+D. It applies the advanced policy.",Causal consequence
+49,"What is a benefit of using Cisco Tetration?
+A. It collects telemetry data from servers and then uses software sensors to analyze flow
+information.
+B. It collects policy compliance data and process details.
+C. It collects enforcement data from servers and collects interpacket variation.
+D. It collects near-real time data from servers and inventories the software packages that exist on
+servers.",Causal consequence
+50,"What is a benefit of performing device compliance?
+A. Verification of the latest OS patches
+B. Device classification and authorization
+C. Providing multi-factor authentication
+D. Providing attribute-driven policies",Causal consequence
+51,"Which public cloud provider supports the Cisco Next Generation Firewall Virtual?
+A. Google Cloud Platform
+B. Red Hat Enterprise Visualization
+C. VMware ESXi
+D. Amazon Web Services",Verification
+52,"Which Cisco AMP file disposition valid?
+A. pristine
+B. malware
+C. dirty
+D. non malicious",Verification
+53,"Which statement about the configuration of Cisco ASA NetFlow v9 Secure Event Logging is true?
+A. To view bandwidth usage for NetFlow records, the QoS feature must be enabled.
+B. A sysopt command can be used to enable NSEL on a specific interface.
+C. NSEL can be used without a collector configured.
+D. A flow-export event type must be defined under a policy",Verification
+54,"An engineer configured a new network identity in Cisco Umbrella but must verify that traffic is being routed through the Cisco Umbrella network. Which action tests the routing?
+A. Ensure that the client computers are pointing to the on-premises DNS servers.
+B. Enable the Intelligent Proxy to validate that traffic is being routed correctly.
+C. Add the public IP address that the client computers are behind to a Core Identity.
+D. Browse to http://welcome.umbrella.com/ to validate that the new identity is working.",Verification
+55,"A network administrator is configuring a switch to use Cisco ISE for 802.1X. An endpoint is failing authentication and is unable to access the network. Where should the administrator begin troubleshooting to verify the authentication details?
+A. Adaptive Network Control Policy List
+B. Context Visibility
+C. Accounting Reports
+D. RADIUS Live Logs",Verification
+56,"Which statement about IOS zone-based firewalls is true?
+A. An unassigned interface can communicate with assigned interfaces
+B. Only one interface can be assigned to a zone.
+C. An interface can be assigned to multiple zones.
+D. An interface can be assigned only to one zone.",Verification
+57,"How many interfaces per bridge group does an ASA bridge group deployment support?
+A. up to 2
+B. up to 4
+C. up to 8
+D. up to 16",Quantification
+58,"With regard to RFC 5176 compliance, how many IETF attributes are supported by the RADIUS CoA feature?
+A. 3
+B. 5
+C. 10
+D. 12",Quantification
+59,"How is ICMP used an exfiltration technique?
+A. by flooding the destination host with unreachable packets
+B. by sending large numbers of ICMP packets with a targeted hosts source IP address using an IP
+broadcast address
+C. by encrypting the payload in an ICMP packet to carry out command and control tasks on a
+compromised host
+D. by overwhelming a targeted host with ICMP echo-request packets",Interpretation
+60,"How is DNS tunneling used to exfiltrate data out of a corporate network?
+A. It corrupts DNS servers by replacing the actual IP address with a rogue address to collect
+information or start other attacks.
+B. It encodes the payload with random characters that are broken into short strings and the DNS
+server
+rebuilds the exfiltrated data.
+C. It redirects DNS requests to a malicious server used to steal user credentials, which allows further
+damage
+and theft on the network.
+D. It leverages the DNS server by permitting recursive lookups to spread the attack to other DNS
+servers.",Interpretation
+61,"What does the Cloudlock Apps Firewall do to mitigate security concerns from an application perspective?
+A. It allows the administrator to quarantine malicious files so that the application can function, just
+not
+maliciously.
+B. It discovers and controls cloud apps that are connected to a companys corporate environment.
+C. It deletes any application that does not belong in the network.
+D. It sends the application information to an administrator to act on.",Interpretation
+62,"How does a cloud access security broker function?
+A. It is an authentication broker to enable single sign-on and multi-factor authentication for a cloud
+solution
+B. lt integrates with other cloud solutions via APIs and monitors and creates incidents based on
+events from the cloud solution
+C. It acts as a security information and event management solution and receives syslog from other
+cloud solutions.
+D. It scans other cloud solutions being used within the network and identifies vulnerabilities",Interpretation
+63,"A network engineer is tasked with configuring a Cisco ISE server to implement external authentication against Active Directory. What must be considered about the authentication requirements? (Choose two.)
+A. RADIUS communication must be permitted between the ISE server and the domain controller.
+B. The ISE account must be a domain administrator in Active Directory to perform JOIN operations.
+C. Active Directory only supports user authentication by using MSCHAPv2.
+D. LDAP communication must be permitted between the ISE server and the domain controller.
+E. Active Directory supports user and machine authentication by using MSCHAPv2.",Interpretation
+64,"How does Cisco Umbrella protect clients when they operate outside of the corporate network?
+A. by modifying the registry for DNS lookups
+B. by using Active Directory group policies to enforce Cisco Umbrella DNS servers
+C. by using the Cisco Umbrella roaming client
+D. by forcing DNS queries to the corporate name servers",Interpretation
+65,"How does Cisco Umbrella archive logs to an enterprise owned storage?
+A. by using the Application Programming Interface to fetch the logs
+B. by sending logs via syslog to an on-premises or cloud-based syslog server
+C. by the system administrator downloading the logs from the Cisco Umbrella web portal
+D. by being configured to send logs to a self-managed AWS S3 bucket",Interpretation
+66,"An engineer adds a custom detection policy to a Cisco AMP deployment and encounters issues with the configuration. The simple detection mechanism is configured, but the dashboard indicates that the hash is not 64 characters and is non-zero. What is the issue?
+A. The engineer is attempting to upload a hash created using MD5 instead of SHA-256
+B. The file being uploaded is incompatible with simple detections and must use advanced detections
+C. The hash being uploaded is part of a set in an incorrect format
+D. The engineer is attempting to upload a file instead of a hash",Interpretation
+67,"How does Cisco Stealthwatch Cloud provide security for cloud environments?
+A. It delivers visibility and threat detection.
+B. It prevents exfiltration of sensitive data.
+C. It assigns Internet-based DNS protection for clients and servers.
+D. It facilitates secure connectivity between public and private networks.",Interpretation
+68,"How does the Cisco WSA enforce bandwidth restrictions for web applications?
+A. It implements a policy route to redirect application traffic to a lower-bandwidth link.
+B. It dynamically creates a scavenger class QoS policy and applies it to each client that connects
+through the WSA.
+C. It sends commands to the uplink router to apply traffic policing to the application traffic.
+D. It simulates a slower link by introducing latency into application traffic.",Interpretation
+69,"What are two workloaded security models? (Choose two)
+A. SaaS
+B. IaaS
+C. on-premises
+D. off-premises
+E. PaaS",Example
+70,"What are two Trojan malware attacks? (Choose two)
+A. Frontdoor
+B. Rootkit
+C. Smurf
+D. Backdoor
+E. Sync",Example
+71,"Which problem Is solved by deploying a multicontext firewall?
+A. overlapping IP addressing plan
+B. more secure policy
+C. resilient high availability design
+D. faster inspection",Example
+72,"What are two benefits of using Cisco Duo as an MFA solution? (Choose two.)
+A. grants administrators a way to remotely wipe a lost or stolen device
+B. provides simple and streamlined login experience for multiple applications and users
+C. native integration that helps secure applications across multiple cloud platforms or on-premises
+environments
+D. encrypts data that is stored on endpoints
+E. allows for centralized management of endpoint device applications and configurations",Example
+73,"What are two security benefits of an MDM deployment? (Choose two.)
+A. robust security policy enforcement
+B. privacy control checks
+C. on-device content management
+D. distributed software upgrade
+E. distributed dashboard",Example
+74,"A network engineer entered the snmp-server user asmith myv7 auth sha cisco priv aes 256 cisc0xxxxxxxxx command and needs to send SNMP information to a host at 10.255.255.1. Which command achieves this goal?
+A. snmp-server host inside 10.255.255.1 version 3 myv7
+B. snmp-server host inside 10.255.255.1 snmpv3 myv7
+C. snmp-server host inside 10.255.255.1 version 3 asmith
+D. snmp-server host inside 10.255.255.1 snmpv3 asmith",Example
+75,"What are two benefits of Flexible NetFlow records? (Choose two)
+A. They allow the user to configure flow information to perform customized traffic identification
+B. They provide attack prevention by dropping the traffic
+C. They provide accounting and billing enhancements
+D. They converge multiple accounting technologies into one accounting mechanism
+E. They provide monitoring of a wider range of IP packet information from Layer 2 to 4",Example
+76,"What are two ways a network administrator transparently identifies users using Active Directory on the Cisco WSA? (Choose two.) The eDirectory client must be installed on each client workstation.
+A. Create NTLM or Kerberos authentication realm and enable transparent user identification
+B. Deploy a separate Active Directory agent such as Cisco Context Directory Agent.
+C. Create an LDAP authentication realm and disable transparent user identification.
+D. Deploy a separate eDirectory server: the client IP address is recorded in this server",Example
+77,"What are two benefits of using an MDM solution? (Choose two.)
+A. grants administrators a way to remotely wipe a lost or stolen device
+B. provides simple and streamlined login experience for multiple applications and users
+C. native integration that helps secure applications across multiple cloud platforms or on-premises
+environments
+D. encrypts data that is stored on endpoints
+E. allows for centralized management of endpoint device applications and configurations",Example
+78,"In which scenario is endpoint-based security the solution?
+A. inspecting encrypted traffic
+B. device profiling and authorization
+C. performing signature-based application control
+D. inspecting a password-protected archive",Example
+79,"What is a prerequisite when integrating a Cisco ISE server and an AD domain?
+A. Place the Cisco ISE server and the AD server in the same subnet
+B. Configure a common administrator account
+C. Configure a common DNS server
+D. Synchronize the clocks of the Cisco ISE server and the AD server",Causal antecedent
